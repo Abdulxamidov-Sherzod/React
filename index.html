@@ -3,14 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Es6</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="FA/css/all.min.css">
 </head>
 <body>
- <div class="row">
-     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti reiciendis eos harum, ratione dolorem voluptate corporis hic labore sed itaque aperiam. Natus porro mollitia delectus vero nobis veniam dolorum incidunt!
- </div>
- </div>
+<section  onclick="del()" id="navbar" class="header">
+  <ul class="header__menu-left">
+        <li><a href="#"><img src="img/1.png" alt="rasm topilmadi"></a></li>
+        <li>
+            <a href="#">Фильмы</a>
+             <ul class="header__blok">
+             <li><a href="#">Популярные</a></li>
+             <li><a href="#">Смотрят сейчас</a></li>
+             <li><a href="#">Ожидаемые</a></li>
+             <li><a href="#">Лучшие</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="#">Сериалы</a>
+            <ul class="header__blok">
+             <li><a href="#">Популярные</a></li>
+             <li><a href="#">В эфире сегодня</a></li>
+             <li><a href="#">По телевидению</a></li>
+             <li><a href="#">Лучшие</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="#">Люди</a>
+            <ul class="header__blok">
+             <li><a href="#">Популярные люди</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Ещё</a>
+              <ul class="header__blok">
+               <li><a href="#">Обсуждения</a></li>
+               <li><a href="#">Доска почёта</a></li>
+               <li><a href="#">Поддержка</a></li>
+               <li><a href="#">API</a></li>
+              </ul>
+          </li>
+  </ul>
+  <ul class="header__menu-right">
+    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+    <li class="ru"><a href="#">RU</a></li>
+    <li><a href="#">Войти</a></li>
+    <li><a href="#">Присоединиться к TMDB</a></li>
+    <li><a href="#"><i class="search fas fa-search"></i></a></li>
+  </ul>
+</section>
+<div  class="container">
+<div onclick="del()"  class="search__welcome">
+<h1>
+    Добро пожаловать.
+</h1>
+<h2>
+    Миллионы фильмов, сериалов и людей. Исследуйте сейчас.
+</h2>
+<div class="search">
+    <input type="text" placeholder="Найти фильм, сериал, персону......">
+</div>
+<div class="search-button">
+    <a href="#">Search</a>
+</div>
+</div>
+<div id="1"  class="gallery_movie">
+    <div onclick="del()"  class="gallery_header">
+        <h2>Что популярно</h2>
+        <div class="selector">
+            <div id="online"  class="online"><a id="online_a" href="#" onclick="foo()">По ТВ </a></div>
+            <div id="prokat" class="prokat"><a id="prokat_a" href="#" onclick="add()">В кинотеатрах </a></div>
+        </div>
+    </div>
+    <div id="one" class="movies">
+
+        <div class="movies_card">
+            <span onclick="add1()" id="span"><b>...</b></span>
+            <div id="box1" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>86 <div class="present">%</div></b>
+                </div>
+            </div>
+            <a href="#"><img src="img/3.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+        <div class="movies_card">
+            <span onclick="add2()" id="span"><b>...</b></span>
+            <div id="box2" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>65 <div class="present">%</div></b>
+                </div>
+            </div>
+            <a href="#"> <img src="img/5.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+        <div class="movies_card">
+            <span onclick="add3()" id="span"><b>...</b></span>
+            <div id="box3" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>86 <div class="present">%</div></b>
+                </div>
+            </div>
+            <a href="#"><img src="img/4.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+        <div class="movies_card">
+            <span onclick="add4()" id="span"><b>...</b></span>
+            <div id="box4" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>86 <div class="present">%</div></b>
+                </div>
+            </div>
+            <a href="#"><img src="img/6.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+        <div class="movies_card">
+            <span onclick="add5()" id="span"><b>...</b></span>
+            <div id="box5" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>86 <div class="present">%</div></b>
+                </div>
+            </div>
+            <a href="#"><img src="img/7.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+        <div class="movies_card">
+            <span onclick="add6()" id="span"><b>...</b></span>
+            <div id="box6" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>86 <div class="present">%</div></b>
+                </div>
+            </div>
+            <a href="#"><img src="img/8.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+        <div class="movies_card">
+            <span onclick="add7()" id="span"><b>...</b></span>
+            <div id="box7" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>86 <div class="present">%</div></b>
+                </div>
+            </div>
+           <a href="#"><img src="img/9.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+        <div class="movies_card">
+            <span onclick="add8()" id="span"><b>...</b></span>
+            <div id="box8" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>86 <div class="present">%</div></b>
+                </div>
+            </div>
+            <a href="#"><img src="img/10.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+        <div class="movies_card">
+            <span onclick="add9()" id="span"><b>...</b></span>
+            <div id="box9" class="box_info">
+                <div class="no_hover"><b>Хотите поставить оценку или добавить в список?</b></div>
+                <p><a href="#">Войти <i class="fas fa-chevron-right"></i></a></p> <hr>
+                <div class="no_hover"><b>Нет аккаунта?</b></div>
+                <p><a href="#">Присоединитесь к сообществу  <i class="fas fa-chevron-right"></i></a></p>
+            </div>
+            <div class="content">
+                <div class="content_color">
+                    <b>86 <div class="present">%</div></b>
+                </div>
+            </div>
+            <a href="#"><img src="img/3.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+
+    </div>
+   <div id="two" class="hover2">
+    <div class="movies1">
+        <div class="movies_card">
+           <a href="#"><img src="img/15.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">Семейка Крудс</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+        <div class="movies_card">
+           <a href="#"> <img src="img/14.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+        <div class="movies_card">
+          <a href="#"><img src="img/13.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+        <div class="movies_card">
+            <a href="#"><img src="img/12.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+        <div class="movies_card">
+           <a href="#"><img src="img/11.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+        <div class="movies_card">
+            <a href="#"><img src="img/3.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+        <div class="movies_card">
+           <a href="#"><img src="img/4.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+        <div class="movies_card">
+            <a href="#"><img src="img/3.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+        <div class="movies_card">
+            <a href="#"><img src="img/7.jpg" alt="rasm topilmadi"></a>
+            <h2><a href="#">30 сребреников</a></h2>
+            <p>29 ноя 2020</p>
+        </div>
+    </div>
+   </div>
+</div>
+</div>
 </body>
+<script src="main.js"></script>
 </html>
